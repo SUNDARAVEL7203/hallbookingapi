@@ -1,0 +1,37 @@
+###
+GET http://localhost:5000/rooms/all
+
+
+###
+POST http://localhost:5000/rooms/create
+Content-Type: application/json
+
+{
+     "roomId": "r5",
+    "seatsAvailable": "3",
+    "amenities": "tv,fridge,heater",
+    "pricePerhr": "200"
+}
+
+###
+POST  http://localhost:5000/booking/create/r4
+Content-Type: application/json
+
+{
+   "roomId": "r4",
+   "seatsAvailable": "5",
+   "amenities": "tv,fridge,heater",
+   "pricePerhr": "100"
+  
+     }
+
+###
+GET http://localhost:5000/viewbooking
+
+
+###
+GET http://localhost:5000/customers
+
+
+###
+GET http://localhost:5000/customer/Sundaravel
