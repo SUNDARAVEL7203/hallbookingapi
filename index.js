@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const port = process.env.PORT || 5000;
 
 const app = express();
 app.use(bodyParser.json());
@@ -165,5 +166,6 @@ app.get('/customer/:name', (req, res) => {
     res.json(customerBookings);
   });
 
-
-  app.listen(5000, () => console.log("started server hallbooking"));
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
