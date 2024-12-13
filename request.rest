@@ -7,10 +7,10 @@ POST http://localhost:5000/rooms/create
 Content-Type: application/json
 
 {
-     "roomId": "r5",
-    "seatsAvailable": "3",
-    "amenities": "tv,fridge,heater",
-    "pricePerhr": "200"
+     "roomId": "r8",
+    "seatsAvailable": "5",
+    "amenities": "tv,ac,bed",
+    "pricePerhr": "1100"
 }
 
 ###
@@ -18,10 +18,10 @@ POST  http://localhost:5000/booking/create/r4
 Content-Type: application/json
 
 {
-   "roomId": "r4",
-   "seatsAvailable": "5",
-   "amenities": "tv,fridge,heater",
-   "pricePerhr": "100"
+   "roomId": "r10",
+   "seatsAvailable": "55",
+   "amenities": "tv,ac,bed",
+   "pricePerhr": "1100"
   
      }
 
