@@ -60,6 +60,10 @@ let rooms = [{
     }
   ];
 
+
+  app.get("/" , (req,res) => {
+    res.json("Welcome")
+  })
   // view all Rooms and its details
 app.get('/rooms/all', (req, res) => {
     res.status(200).json({ RoomsList: rooms });
