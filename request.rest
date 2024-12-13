@@ -35,3 +35,6 @@ GET http://localhost:5000/customers
 
 ###
 GET http://localhost:5000/customer/Sundaravel
+
+###
+GET https://hallbookingapi-s91l.onrender.com/customer/Sundaravel
