@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
-
 const app = express();
+
 app.use(bodyParser.json());
 
 let rooms = [{
@@ -60,10 +60,10 @@ let rooms = [{
     }
   ];
 
-
   app.get("/" , (req,res) => {
     res.json("Welcome")
   })
+ 
   // view all Rooms and its details
 app.get('/rooms/all', (req, res) => {
     res.status(200).json({ RoomsList: rooms });
